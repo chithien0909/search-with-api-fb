@@ -1,0 +1,23 @@
+<%- contentFor('header') %>
+<!--<h1 class="page-title"><%= _locals.title %></h1>-->
+
+<%- contentFor('footer') %>
+
+<% /*
+Content for the `body` section should either be the first thing defined
+in the view, or it has to be declared just like any other section.
+*/ %>
+<%- contentFor('body') %>
+<div class="container">
+    <form class="form-search" action="./search">
+
+        <h1 class="title">What are you looking for ?</h1>
+        <div class="input-group mb-3">
+            <input name="input" type="text" class="form-control" placeholder="What are you looking for ?" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+
+                <button class="btn btn-success" type="submit">Search</button>
+            </div>
+        </div>
+    </form>
+</div>
